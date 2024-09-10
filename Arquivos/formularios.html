@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang = "pt-br">
+
+
+<head>
+    <meta charset = "UTF-8">
+    <meta name =" viewport" content = "width=device-width, initial-scale=1.0">
+</head>
+
+
+<body>
+        <h1>Formulário</h1>
+
+        <form> <!-- Estrutura de formulário-->
+            <label for = "campo_nome">Nome:</label> <!-- Label é o título do input -->
+            <input id = "campo_nome" type = "text" placeholder = "Digite seu nome" required>
+
+            <br> <br>
+
+            <label for = "campo_sobrenome">Sobrenome:</label> <!-- O for direciona para o campo de preenchimento-->
+            <input id = "campo_sobrenome" type = "text" placeholder = "Digite seu Sobrenome" required>
+
+            <br> <br>
+
+            <label for = "campo_senha">Senha:</label>
+            <input id = "campo_senha" type = "password" placeholder = "Digite sua senha" required>
+
+            <br> <br>
+
+            <label for = "campo_email">Email:</label>
+            <input id = "campo_email" type = "email" placeholder = "Digite seu email" required>
+
+            <br> <br>
+
+            <hr>
+
+            <h2> Animal de Estimação </h2>
+
+            <input type = "radio" name = "animal" id = "dog" value = "cachorro"> <!-- Radio se usa para escolha única e todos tem o mesmo name-->
+            <label for = "dog">Cachorro</label>
+
+            <br> <br>
+
+            <input type = "radio" name = "animal" id = "cat" value = "gato">
+            <label for = "cat">Gato</label>
+
+            <br> <br>
+
+            <input type = "radio" name = "animal" id = "fish" value = "peixe"> <!-- Value é o que vai ser mandado para o formulário-->
+            <label for = "fish">Peixe</label>
+
+            <hr>
+
+            <h3>O que você joga?</h3>
+
+            <input type = "checkbox" name = "jogo1" id = "jogo1" value = "League of Legends">
+            <label for = "jogo1">League of Legends</label>
+            
+            <br> <br>
+
+            <input type = "checkbox" name = "jogo2" id = "jogo2" value = "Valorant">
+            <label for = "jogo2">Valorant</label>
+
+            <br> <br>
+
+            <input type = "checkbox" name = "jogo3" id = "jogo3" value = "Counter-Strike">
+            <label for = "jogo3">Counter-Strike</label>
+
+            <hr>
+
+            <h4>Escolha uma cor</h4>
+            <select name = cores>                                      <!--Select serve para escolher um valor em uma aba pequena-->
+                <option selected disabled value = "">Escolha uma cor</option>
+                <option value = "Verde">Verde</option>
+                <option value = "Azul">Azul</option>
+                <option value = "Rosa">Rosa</option>
+                <option value = "Amarelo">Amarelo</option>
+                <option value = "Preto">Preto</option>
+            </select>
+
+            <hr>
+
+            <h2>Digite sua mensagem</h2>
+
+            <textarea rows = "15" cols = "55" name = "caixa" placeholder = "Digite aqui sua mensagem"></textarea> <!-- Linhas e colunas-->
+
+            <br> <br>
+
+            <input type = "submit" value = "Enviar Formulário" required>
+
+        </form>
+        
+</body>
+
+
+</html>
